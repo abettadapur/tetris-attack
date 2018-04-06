@@ -3,8 +3,8 @@ import * as Phaser from 'phaser';
 var config = {
     type: Phaser.AUTO,
     parent: 'phaser-example',
-    width: 800,
-    height: 600,
+    width: 1920,
+    height: 1080,
     scene: {
         preload: preload,
         create: create
@@ -23,7 +23,7 @@ function create() {
     this.tweens.add({
         targets: logo,
         y: 450,
-        duration: 200,
+        duration: 2000,
         ease: 'Power2',
         yoyo: true,
         loop: -1
